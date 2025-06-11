@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/footer.astro";
+import ClientRouter from "astro/components/ClientRouter.astro";
 
 import "@fontsource-variable/montserrat";
 ---
@@ -15,6 +16,7 @@ import "@fontsource-variable/montserrat";
 		<title>{Astro.props.title}</title>
 	</head>
 	<body>
+		<ClientRouter />
 		<slot />
 	</body>
 	<Footer />
