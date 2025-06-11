@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Art Julián Molina"
+    description="A collection of art dedicated to Julián Molina"
+>
+    <h1>Art Gallery</h1>
+    <p>Explore the beautiful art dedicated to Julián Molina.</p>
+
+    <div class="gallery">
+        <p>
+            Here you can find various artworks inspired by Julián Molina. Each
+            piece is a tribute to his unique charm and charisma.
+        </p>
+    </div>
+    <a href="/">Back to Home</a>
+</Layout>
+
+<style>
+    h1 {
+        text-align: center;
+        color: #ff6347; /* Tomato color */
+    }
+    p {
+        text-align: center;
+        color: #333; /* Dark gray for better readability */
+    }
+    a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff; /* Bootstrap primary color */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #0056b3; /* Darker shade on hover */
+    }
+</style>

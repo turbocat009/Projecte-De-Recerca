@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Julián Te Amo" description="A web to adore and love Julián Molina">
+	<h1>Welcome to Julián's World</h1>
+	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
+	<p>Feel free to explore and enjoy!</p>
+	<a href="/art">Explore the Art Gallery</a>
 </Layout>
+
+<style>
+	h1 {
+		text-align: center;
+		color: #ff6347; /* Tomato color */
+	}
+	p {
+		text-align: center;
+		color: #333; /* Dark gray for better readability */
+	}
+	a {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+		color: #007bff; /* Bootstrap primary color */
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #0056b3; /* Darker shade on hover */
+	}
+</style>
