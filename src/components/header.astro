@@ -78,16 +78,18 @@
         opacity: 0.5;
     }
 
-    nav.scrolled {
-        animation: smallHeader 0.75s forwards;
-    }
-
     .selected {
         color: rgb(255, 144, 17);
     }
 
     .mobileOnly {
         display: none;
+    }
+
+    @media (min-width: 769px) {
+        nav.scrolled {
+            animation: smallHeader 0.75s forwards;
+        }
     }
 
     @media (max-width: 768px) {
