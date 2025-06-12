@@ -39,4 +39,22 @@ import Layout from "../layouts/Layout.astro";
         text-decoration: underline;
         color: #0056b3; /* Darker shade on hover */
     }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1 {
+            color: #ff6347; /* Tomato color */
+        }
+        p {
+            color: #e0e0e0; /* Light gray for better readability in dark mode */
+        }
+        a {
+            color: #007bff; /* Bootstrap primary color */
+        }
+        a:hover {
+            color: #0056b3; /* Darker shade on hover */
+        }
+    }
 </style>

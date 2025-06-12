@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 /*<h1>Welcome to Julián's World</h1>
 	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
 	<p>Feel free to explore and enjoy!</p>
@@ -8,8 +8,14 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Julián Te Amo" description="A web to adore and love Julián Molina">
-	
+<Layout
+	title="Julián Te Amo"
+	description="A web to adore and love Julián Molina"
+>
+	<h1>Welcome to Julián's World</h1>
+	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
+	<p>Feel free to explore and enjoy!</p>
+	<a href="/art">Explore the Art Gallery</a>
 </Layout>
 
 <style>
@@ -32,5 +38,24 @@ import Layout from '../layouts/Layout.astro';
 	a:hover {
 		text-decoration: underline;
 		color: #0056b3; /* Darker shade on hover */
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: #121212;
+			color: #e0e0e0;
+		}
+		h1 {
+			color: #ff6347; /* Tomato color */
+		}
+		p {
+			color: #e0e0e0; /* Light gray for better readability in dark mode */
+		}
+		a {
+			color: #007bff; /* Bootstrap primary color */
+		}
+		a:hover {
+			color: #0056b3; /* Darker shade on hover */
+		}
 	}
 </style>
