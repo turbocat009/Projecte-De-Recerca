@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="b" width="800" height="800" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .g{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <g id="c">
+    <path id="d" d="m16.6 19.4 7.4-4.6 7.4 4.6" class="g"/>
+    <path id="e" d="M41 14.8 24 4.5 7 14.8" class="g"/>
+    <path id="f" d="m24 43.5 17-10.1V14.8l-9.6 4.6v8.7l-5.8 3.2v5.3l-1.6 1-1.6-1v-5.3L16.6 28v-8.7L7 14.8v18.6l17 10.1Z" class="g"/>
+  </g>
+</svg>
