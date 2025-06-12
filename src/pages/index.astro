@@ -8,20 +8,19 @@ import Layout from "../layouts/Layout.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout
-	title="J Te Amo"
-	description="A web to adore and love Julián Molina"
->
-	<h1>Welcome to Angels Carrera</h1>
-	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
+<Layout title="Lorem Ipsum" description="A web to adore and love">
+	<h1>Welcome to ...</h1>
+	<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
 	<p>Feel free to explore and enjoy!</p>
-	<a href="/art">Explore the Art Gallery</a>
 </Layout>
 
 <style>
 	h1 {
 		text-align: center;
-		color: #ff6347; /* Tomato color */
+		color:rgb(0, 153, 255);
+		text-shadow:
+			0 0 30px #007bff,
+			0 0 70px #007bff;
 	}
 	p {
 		text-align: center;
@@ -44,9 +43,16 @@ import Layout from "../layouts/Layout.astro";
 		body {
 			background-color: #121212;
 			color: #e0e0e0;
+			z-index: 1;
 		}
 		h1 {
-			color: #ff6347; /* Tomato color */
+			text-align: center;
+			color: rgb(202, 115, 15);
+			text-shadow:
+				0 0 20px rgb(202, 115, 15),
+				0 0 30px rgb(202, 115, 15),
+				0 0 40px rgb(202, 115, 15),
+				0 0 70px rgb(202, 115, 15);
 		}
 		p {
 			color: #e0e0e0; /* Light gray for better readability in dark mode */
@@ -55,7 +61,7 @@ import Layout from "../layouts/Layout.astro";
 			color: #007bff; /* Bootstrap primary color */
 		}
 		a:hover {
-			color: #0056b3; /* Darker shade on hover */
+			color: #; /* Darker shade on hover */
 		}
 	}
 </style>

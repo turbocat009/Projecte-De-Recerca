@@ -2,26 +2,24 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout
-    title="Art Julián Molina"
-    description="A collection of art dedicated to Julián Molina"
->
+<Layout title="Art" description="A collection of art">
     <h1>Art Gallery</h1>
-    <p>Explore the beautiful art dedicated to Julián Molina.</p>
-
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="gallery">
         <p>
-            Here you can find various artworks inspired by Julián Molina. Each
+            Here you can find various artworks inspired by Lorem Ipsum. Each
             piece is a tribute to his unique charm and charisma.
         </p>
     </div>
-    <a href="/">Back to Home</a>
 </Layout>
 
 <style>
     h1 {
         text-align: center;
-        color: #ff6347; /* Tomato color */
+        color: rgb(0, 153, 255);
+        text-shadow:
+            0 0 30px #007bff,
+            0 0 70px #007bff;
     }
     p {
         text-align: center;
@@ -45,16 +43,21 @@ import Layout from "../layouts/Layout.astro";
             color: #e0e0e0;
         }
         h1 {
-            color: #ff6347; /* Tomato color */
+            color: rgb(202, 115, 15);
+            text-shadow:
+                0 0 20px rgb(202, 115, 15),
+                0 0 30px rgb(202, 115, 15),
+                0 0 40px rgb(202, 115, 15),
+                0 0 70px rgb(202, 115, 15);
         }
         p {
-            color: #e0e0e0; /* Light gray for better readability in dark mode */
+            color: #e0e0e0;
         }
         a {
-            color: #007bff; /* Bootstrap primary color */
+            color: #007bff;
         }
         a:hover {
-            color: #0056b3; /* Darker shade on hover */
+            color: #0056b3;
         }
     }
 </style>
