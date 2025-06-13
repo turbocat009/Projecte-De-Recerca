@@ -9,59 +9,113 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Lorem Ipsum" description="A web to adore and love">
-	<h1>Welcome to ...</h1>
-	<p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	<p>Feel free to explore and enjoy!</p>
+	<main>
+		<section>
+			<div></div>
+			<div></div>
+		</section>
+		<section class="section2">
+			<div class="div2"></div>
+			<div class="div2"></div>
+		</section>
+	</main>
 </Layout>
 
 <style>
-	h1 {
-		text-align: center;
-		color:rgb(0, 153, 255);
-		text-shadow:
-			0 0 30px #007bff,
-			0 0 70px #007bff;
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		width: 100%;
 	}
-	p {
-		text-align: center;
-		color: #333; /* Dark gray for better readability */
-	}
-	a {
-		display: block;
-		text-align: center;
-		margin-top: 20px;
-		color: #007bff; /* Bootstrap primary color */
-		text-decoration: none;
-		font-weight: bold;
-	}
-	a:hover {
-		text-decoration: underline;
-		color: #0056b3; /* Darker shade on hover */
+	section {
+		display: grid;
+		grid-template-columns: 1fr 25rem;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+		width: 100%;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		body {
-			background-color: #121212;
-			color: #e0e0e0;
-			z-index: 1;
+	.section2 {
+		display: grid;
+		grid-template-columns: 25rem 1fr;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	div {
+		width: 100%;
+		height: 450px;
+		background-color: #a6ecf8;
+		border-radius: 20px;
+	}
+
+	.div2 {
+		height: 300px;
+	}
+
+	.div2:first-child {
+		background-color: #e9fad9;
+	}
+
+	.div2:last-child {
+		background-color: #a6ecf8;
+	}
+
+	@media (max-width: 1367px) {
+		section {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			gap: 1rem;
+			width: 100%;
 		}
-		h1 {
-			text-align: center;
-			color: rgb(202, 115, 15);
-			text-shadow:
-				0 0 20px rgb(202, 115, 15),
-				0 0 30px rgb(202, 115, 15),
-				0 0 40px rgb(202, 115, 15),
-				0 0 70px rgb(202, 115, 15);
+
+		.section2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			gap: 1rem;
+			width: 100%;
 		}
-		p {
-			color: #e0e0e0; /* Light gray for better readability in dark mode */
+
+		div:first-child {
+			background-color: #a6ecf8;
+			height: 300px;
 		}
-		a {
-			color: #007bff; /* Bootstrap primary color */
+
+		div:last-child {
+			background-color: #e9fad9;
+			height: 300px;
 		}
-		a:hover {
-			color: #; /* Darker shade on hover */
+
+		.div2:first-child {
+			background-color: #e9fad9;
+			height: 300px;
+		}
+
+		.div2:last-child {
+			background-color: #a6ecf8;
+			height: 300px;
+		}
+	}
+
+	@media (max-width: 769px) {
+		section {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 1rem;
+			width: 100%;
+		}
+
+		.section2 {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 1rem;
+			width: 100%;
 		}
 	}
 </style>

@@ -17,11 +17,17 @@ import "@fontsource-variable/montserrat";
 		<title>{Astro.props.title}</title>
 	</head>
 	<body>
-		<Header />
+		<header>
+			<Header />
+		</header>
 		<main>
 			<slot />
+			<section>
+				<div></div>
+				<Footer />
+			</section>
 		</main>
-		<Footer />
+		<footer></footer>
 	</body>
 </html>
 
@@ -29,79 +35,59 @@ import "@fontsource-variable/montserrat";
 	html,
 	body {
 		font-family: aktiv-grotesk-extended, "Montserrat Variable", sans-serif;
-		margin: 0;
-		width: 100%;
-		min-height: 200vh;
-		display: flex;
-		flex-direction: column;
+		max-width: 100%;
+		display: grid;
+		grid-template-rows: 100px 1fr 1fr;
+		grid-template-columns: 1fr;
+		margin: 1rem;
+		justify-content: start;
 		overscroll-behavior: none;
+		background-color: #f0f9f3;
 	}
 
-	body::before {
-		content: "";
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		z-index: -1;
-		background: radial-gradient(
-				circle at 60% 40%,
-				rgb(255, 205, 134) 0%,   /* soft orange */
-				rgb(227, 242, 253) 80%  /* light blue */
-			),
-			linear-gradient(120deg, #ffffffaa 0%, #90caf988 100%); /* white to blue */
-		filter: blur(60px) brightness(0.9) saturate(1.3);
-		opacity: 0.8;
-		border-radius: 16px;
-		pointer-events: none;
-		animation: pulse ease-in-out 20s infinite alternate;
+	main {
+		display: grid;
+		grid-template-columns: 1fr 30rem;
+		gap: 1rem;
 	}
 
-	@keyframes pulse {
-		0% {
-			transform: scale(1);
-		}
-		25% {
-			transform: scale(1.2) translateY(-10px) rotate(-5deg);
-		}
-		75% {
-			transform: scale(0.7) translateY(10px) rotate(5deg);
-		}
-		100% {
-			transform: scale(1) translateY(0) rotate(0deg);
-		}
+	main div {
+		width: 100%;
+		height: 615px;
+		background-color: #e9fad9;
+		border-radius: 20px;
 	}
 
-	@media (prefers-color-scheme: dark) {
-		body {
-			background-color: rgb(5, 6, 45);
-			color: #e0e0e0;
-		}
-		body::before {
-			content: "";
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 100vh;
-			z-index: -1;
-			background: radial-gradient(
-					circle at 60% 40%,
-					#007bff55 0%,
-					#121212 80%
-				),
-				linear-gradient(120deg, #0d47a1aa 0%, #8e24aa88 100%);
-			filter: blur(60px) brightness(0.7) saturate(1.5);
-			opacity: 0.8;
-			pointer-events: none;
-			animation: pulse ease-in-out 20s infinite alternate;
-		}
+	footer div {
+		background-color: brown;
+		width: 100%;
+		height: 10px;
+	}
+	section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 615px 150px;
+		width: 100%;
+		height: 100%;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1214px) {
 		main {
-			margin-top: 100px;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		section div {
+			height: 500px;
+		}
+
+		section {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 500px 150px;
+			width: 100%;
+			height: 100%;
 		}
 	}
 </style>
