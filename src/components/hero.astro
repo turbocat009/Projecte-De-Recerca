@@ -1,11 +1,10 @@
 <section>
-    <h1>L'evolució de l'art</h1>
+    <h1>{Astro.props.title}</h1>
     <p>
-        Un viatge a través de la història de l'art, des dels primers temps de la
-        humanitat fins a expressions contemporànies.
+        {Astro.props.content}
     </p>
     <p class="quote">
-        "L’art no reprodueix allò visible, sinó que fa visible allò invisible."
+        {Astro.props.quote}
     </p>
 </section>
 
@@ -18,7 +17,7 @@
         height: 100%;
         padding: 3rem 0rem 15rem 0rem;
         position: relative;
-        color: rgb(64,64,64);
+        color: rgb(64, 64, 64);
     }
 
     section::before {
@@ -50,6 +49,7 @@
     h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        text-align: center;
     }
 
     p {

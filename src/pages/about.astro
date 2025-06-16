@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/hero.astro";
+import Card from "../components/card.astro";
+
 /*<h1>Welcome to Julián's World</h1>
 	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
 	<p>Feel free to explore and enjoy!</p>
@@ -8,4 +11,89 @@ import Layout from "../layouts/Layout.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Lorem Ipsum" description="A web to adore and love" />
+<Layout title="Lorem Ipsum" description="A web to adore and love">
+	<Hero title="Sobre el Projecte" />
+	<section class="cards-row">
+		<Card title="Objectius">
+			<p>
+				Fer més fàcil i accessible per a tota la població conèixer la
+				evolució de l'art a través de la tecnologia
+			</p>
+		</Card>
+		<Card title="Aquest Projecte">
+			<p>
+				Aquest projecte ha estat creat per un grup d'alumnes de 4t d'ESO
+				de l'Institut Pau Vila de Sabadell
+			</p>
+		</Card>
+		<div class="contact-card">
+			<h1>Contacte</h1>
+			<p>
+				Correu: <a href="mailto:pllonc@inspauvila.cat"
+					>pllonc@inspauvila.cat</a>
+			</p>
+			<p>Telèfon: <a href="tel:+34123456789">+34 123 456 789</a></p>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem;
+	}
+	section > * {
+		flex: 1 1 calc(25% - 2rem);
+		box-sizing: border-box;
+	}
+
+	p {
+		font-size: 1.5rem;
+		color: #555;
+		margin-top: 1rem;
+	}
+
+	.arrow {
+		width: 25px;
+		height: 25px;
+		margin-bottom: 1rem;
+		transition: transform 0.3s ease;
+		align-self: end;
+		margin-right: 1rem;
+	}
+
+	.timeline {
+		width: 10rem;
+		height: auto;
+		margin-top: 1rem;
+	}
+
+	.contact-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 300px;
+		padding: 2rem 1rem 0rem 1rem;
+		background-color: #fdfdfd;
+		border-radius: 10px;
+		box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease;
+	}
+
+	.contact-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 12px 10px rgba(0, 0, 0, 0.3);
+	}
+
+	.contact-card h1 {
+		font-size: 2rem;
+		font-weight: 500;
+		margin: 0;
+		text-align: start;
+	}
+</style>

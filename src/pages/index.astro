@@ -11,19 +11,29 @@ import Card from "../components/card.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Lorem Ipsum" description="A web to adore and love">
-	<Hero />
+<Layout
+	title="L'evolució De l'Art"
+	description="Un lloc web per  explorar l'evolució de l'art a través de les èpoques i els artistes més influents."
+>
+	<Hero
+		title="L'evolució De l'Art"
+		content="Un viatge a través de la història de l'art, des dels primers temps de la humanitat fins a expressions contemporànies."
+		quote="L’art no reprodueix allò visible, sinó que fa visible allò invisible."
+	/>
 	<section>
 		<Card title="Art" href="/art">
-			<img class="timeline" src="/svg/timeline.svg" alt="SVG Timeline">
+			<img class="timeline" src="/svg/timeline.svg" alt="SVG Timeline" />
 			<p>Un viatge per l'evolució de l'art.</p>
 		</Card>
 		<Card title="Explora" href="/explore">
 			<p>Explora les diferents obres l'art de totes èpoques.</p>
-			<img class="arrow" src="/svg/arrow.svg" alt="SVG Arrow">
+			<img class="arrow" src="/svg/arrow.svg" alt="SVG Arrow" />
 		</Card>
 		<Card title="Artistes" href="/artists">
-			<p>Descobreix els grans mestres de l'art i les seves obres més icòniques.</p>
+			<p>
+				Descobreix els grans mestres de l'art i les seves obres més
+				icòniques.
+			</p>
 		</Card>
 		<Card title="Sobre" href="/about">
 			<p>Una breu explicació sobre els autors del web</p>

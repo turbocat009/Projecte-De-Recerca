@@ -83,6 +83,39 @@
     .mobileOnly {
         display: none;
     }
+
+    @media (max-width: 768px) {
+        nav ul.desktopOnly {
+            display: none;
+        }
+        nav button.mobileOnly {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        nav button.mobileOnly div {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 1rem;
+            display: none;
+            flex-direction: column;
+        }
+        .mobile-menu li {
+            margin-bottom: 1rem;
+        }
+    }
 </style>
 
 <script>
