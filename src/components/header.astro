@@ -1,6 +1,6 @@
 <header>
     <nav id="main-nav">
-        <a href="/"><img src="/svg/icon" alt="Logo del web" /></a>
+        <a href="/"><img src="/svg/logo.svg" alt="Logo del web" /></a>
         <button class="mobileOnly">
             <div></div>
             <div></div>
@@ -8,6 +8,9 @@
         <ul class="desktopOnly">
             <li><a class="inici" href="/">Inici</a></li>
             <li><a class="art" href="/art">Art</a></li>
+            <li><a class="explore" href="/explore">Explora</a></li>
+            <li><a class="artists" href="/artists">Artistes</a></li>
+            <li><a class="about" href="/about">Sobre</a></li>
         </ul>
     </nav>
     <ul class="mobileOnly mobile-menu">
@@ -28,7 +31,6 @@
         padding: 1rem 4rem;
         width: 100%;
         height: 100%;
-        background-color: rgb(189, 230, 150);
         transition: all 0.5s;
         backdrop-filter: blur(25px);
         border-radius: 20px;
@@ -36,8 +38,8 @@
     }
 
     nav img {
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
 
     button.open div:nth-child(1) {
@@ -104,6 +106,21 @@
         case "/art":
             const artLinks = document.querySelectorAll(".art");
             artLinks.forEach((link) => link.classList.add("selected"));
+            break;
+        case "/explore/":
+        case "/explore":
+            const exploreLinks = document.querySelectorAll(".explore");
+            exploreLinks.forEach((link) => link.classList.add("selected"));
+            break;
+        case "/artists/":
+        case "/artists":
+            const artistsLinks = document.querySelectorAll(".artists");
+            artistsLinks.forEach((link) => link.classList.add("selected"));
+            break;
+        case "/about/":
+        case "/about":
+            const aboutLinks = document.querySelectorAll(".about");
+            aboutLinks.forEach((link) => link.classList.add("selected"));
             break;
         default:
             break;

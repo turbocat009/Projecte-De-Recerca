@@ -17,73 +17,22 @@ import "@fontsource-variable/montserrat";
 		<title>{Astro.props.title}</title>
 	</head>
 	<body>
-		<header>
-			<Header />
-		</header>
+		<Header />
 		<main>
 			<slot />
-			<section>
-				<div></div>
-				<Footer />
-			</section>
 		</main>
-		<footer></footer>
+		<Footer />
 	</body>
 </html>
 
 <style>
-	html,
 	body {
-		font-family: aktiv-grotesk-extended, "Montserrat Variable", sans-serif;
-		max-width: 100%;
-		display: grid;
-		grid-template-rows: 100px 1fr 1fr;
-		grid-template-columns: 1fr;
-		margin: 1rem;
-		justify-content: start;
-		overscroll-behavior: none;
-		background-color: #f0f9f3;
-	}
-
-	main {
-		display: grid;
-		grid-template-columns: 1fr 30rem;
-		gap: 1rem;
-	}
-
-	main div {
-		width: 100%;
-		height: 615px;
-		background-color: rgb(189, 230, 150);
-		border-radius: 20px;
-	}
-
-	section {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 615px 150px;
-		width: 100%;
-		height: 100%;
-	}
-
-	@media (max-width: 1214px) {
-		main {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 1fr;
-			gap: 1rem;
-		}
-
-		section div {
-			height: 500px;
-		}
-
-		section {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: 500px 150px;
-			width: 100%;
-			height: 100%;
-		}
+		font-family: "Montserrat Variable", sans-serif;
+		margin: 0px;
+		padding: 0px;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
 	}
 </style>

@@ -1,0 +1,67 @@
+<section>
+    <h1>L'evolució de l'art</h1>
+    <p>
+        Un viatge a través de la història de l'art, des dels primers temps de la
+        humanitat fins a expressions contemporànies.
+    </p>
+    <p class="quote">
+        "L’art no reprodueix allò visible, sinó que fa visible allò invisible."
+    </p>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 3rem 0rem 15rem 0rem;
+        position: relative;
+        color: rgb(64,64,64);
+    }
+
+    section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("/hero-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    section::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, white 0%, transparent 40%);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    section > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .quote {
+        font-style: italic;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: rgb(100, 100, 100);
+    }
+</style>
