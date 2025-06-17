@@ -7,13 +7,27 @@ import "@fontsource-variable/montserrat";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ca">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/svg/logo.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={Astro.props.description} />
+		<meta name="keywords" content="projecte, recerca, astro, web, art, història de l'art, investigació, cultura, educació, museu, patrimoni, estudi, artista, exposició, crítica, història, arquitectura, pintura, escultura, disseny, recurs, informació, recerca artística, art contemporani, art clàssic, art modern, art digital, creativitat, divulgació"/>
+		<meta name="author" content="Turbocat009 & LOLO-cat" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta property="og:title" content={Astro.props.title} />
+		<meta property="og:description" content={Astro.props.description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.site?.href ?? ""} />
+		<meta property="og:image" content="/svg/logo.svg" />
+		<meta name="twitter:card" content="/svg/logo.svg" />
+		<meta name="twitter:title" content={Astro.props.title} />
+		<meta name="twitter:description" content={Astro.props.description} />
+		<meta name="twitter:image" content="/svg/logo.svg" />
+		<link rel="canonical" href={Astro.site?.href ?? ""} />
 		<title>{Astro.props.title}</title>
 	</head>
 	<body>
