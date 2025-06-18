@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/hero.astro";
+import Painting from "../components/painting.astro";
 
 /*<h1>Welcome to Julián's World</h1>
 	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
@@ -10,6 +11,104 @@ import Hero from "../components/hero.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Lorem Ipsum" description="A web to adore and love" >
-	<Hero />
+<Layout title="Explora" description="Explora les diferents obres d'art de totes les èpoques.">
+	<Hero title="Explora les Obres d'Art" />
+	<section class="painting-section">
+		<Painting
+			title="Lamentació"
+			image="/paintings/lamentacio.jpg"
+			author="Giotto di Bondone"
+			date="1305-1306"
+			style="Gòtic"
+			description="En aquesta obra, es pot observar la representació de la lamentació de Crist mort."
+		/>
+		<Painting
+			title="Mona Lisa"
+			image="/paintings/monalisa.jpg"
+			author="Leonardo da Vinci"
+			date="1503-1519"
+			style="Renaixentista"
+			description="Un dels retrats més famosos de la història, conegut per la seva mirada enigmàtica."
+		/>
+		<Painting
+			title="Creació d'Adam"
+			image="/paintings/creacioadam.jpg"
+			author="Michelangelo Buonarroti"
+			date="1508-1512"
+			style="Renaixentista"
+			description="Part del sostre de la Capella Sixtina, mostra el moment en què Déu dóna vida a Adam."
+		/>
+		<Painting
+			title="Les Menines"
+			image="/paintings/lasmeninas.jpg"
+			author="Diego Velázquez"
+			date="1656"
+			style="Barroc"
+			description="Obra mestra que representa la família reial espanyola i la vida cortesana."
+		/>
+		<Painting
+			title="El 3 de maig de 1808"
+			image="/paintings/3mayo.jpg"
+			author="Francisco de Goya"
+			date="1814"
+			style="Romanticisme"
+			description="Representa l'execució de civils madrilenys per les tropes franceses."
+		/>
+		<Painting
+			title="Impressió, sol naixent"
+			image="/paintings/solneixent.jpg"
+			author="Claude Monet"
+			date="1872"
+			style="Impressionisme"
+			description="L'obra que va donar nom al moviment impressionista."
+		/>
+		<Painting
+			title="La Nit Estelada"
+			image="/paintings/nitestrellada.webp"
+			author="Vincent van Gogh"
+			date="1889"
+			style="Post-impressionisme"
+			description="Una de les obres més reconegudes de Van Gogh, mostra un cel nocturn turbulent."
+		/>
+		<Painting
+			title="La persistència de la memòria"
+			image="/paintings/temps.png"
+			author="Salvador Dalí"
+			date="1931"
+			style="Surrealisme"
+			description="Famosa per els seus rellotges tous, símbol del temps fluid i la realitat distorsionada."
+		/>
+		<Painting
+			title="Llaunes de sopa Campbell"
+			image="/paintings/llaunes.jpg"
+			author="Andy Warhol"
+			date="1962"
+			style="Pop Art"
+			description="Sèrie icònica que representa la cultura del consum i la producció en massa."
+		/>
+		<Painting
+			title="Infinity Mirror Rooms"
+			image="/paintings/infinityroom.jpg"
+			author="Yayoi Kusama"
+			date="1965-present"
+			style="Art contemporani"
+			description="Instal·lacions immersives que exploren els conceptes d'infinit i repetició."
+		/>
+	</section>
 </Layout>
+
+<style>
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem;
+	}
+
+	.painting-section > * {
+		flex: 1 1 calc(33.3% - 2rem);
+		box-sizing: border-box;
+		min-width: 250px;
+	}
+</style>

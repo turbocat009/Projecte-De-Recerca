@@ -12,4 +12,73 @@ import Hero from "../components/hero.astro";
 
 <Layout title="Lorem Ipsum" description="A web to adore and love" >
 	<Hero />
+	<section class="timeline">
+		<div class="container">
+			<div class="timeline-item">
+				<h3>Art Prehistòric</h3>
+				<p>Pintures rupestres i petroglifs</p>
+				<span class="date">30.000 aC</span>
+			</div>
+			<div class="timeline-item">
+				<h3>Art Antic</h3>
+				<p>Art egipci, grec i romà</p>
+				<span class="date">3000 aC - 500 dC</span>
+			</div>
+			<div class="timeline-item">
+				<h3>Art Medieval</h3>
+				<p>Períodes romànic i gòtic</p>
+				<span class="date">500 - 1400</span>
+			</div>
+			<div class="timeline-item">
+				<h3>Renaixement</h3>
+				<p>Renaixement de la cultura clàssica</p>
+				<span class="date">1400 - 1600</span>
+			</div>
+			<div class="timeline-item">
+				<h3>Art Modern</h3>
+				<p>De l'impressionisme a l'abstracte</p>
+				<span class="date">1860 - 1970</span>
+			</div>
+			<div class="timeline-item">
+				<h3>Art Contemporani</h3>
+				<p>Art digital i mitjans mixtos</p>
+				<span class="date">1970 - Present</span>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		.timeline {
+			padding: 2rem 0;
+			background: var(--bg-gradient);
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
+		.timeline-item {
+			position: relative;
+			padding: 2rem;
+			margin: 2rem 0;
+			background: rgb(243, 242, 242);
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+			border-radius: 8px;
+			backdrop-filter: blur(10px);
+		}
+		.timeline-item h3 {
+			color: var(--accent);
+			margin: 0 0 0.5rem 0;
+		}
+		.timeline-item p {
+			margin: 0;
+		}
+		.date {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			font-size: 0.8rem;
+			opacity: 0.8;
+		}
+	</style>
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/hero.astro";
+import Painting from "../components/painting.astro";
 
 /*<h1>Welcome to Julián's World</h1>
 	<p>This is a place dedicated to celebrate Julián Molina's cult.</p>
@@ -10,6 +11,81 @@ import Hero from "../components/hero.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Lorem Ipsum" description="A web to adore and love">
+<Layout
+	title="Sobre els Artistes"
+	description="Explora els artistes més influents de la història de l'art."
+>
 	<Hero title="Sobre els Artistes" />
+	<section>
+		<Painting
+			title="Pablo Picasso"
+			image="/authors/picasso.webp"
+			description="Un dels artistes més influents del segle XX, conegut per cofundar el cubisme."
+			date="1881-1973"
+			style="Cubisme"
+		/>
+		<Painting
+			title="Vincent van Gogh"
+			image="/authors/vangogh.webp"
+			description="Famos per les seves pinzellades expressives i l'ús vibrant del color."
+			date="1853-1890"
+			style="Postimpressionisme"
+		/>
+		<Painting
+			title="Frida Kahlo"
+			image="/authors/fridakahlo.webp"
+			description="Artista mexicana coneguda per les seves obres autobiogràfiques i el seu estil únic."
+			date="1907-1954"
+			style="Surrealisme"
+		/>
+		<Painting
+			title="Leonardo da Vinci"
+			image="/authors/davinci.webp"
+			description="Un dels grans mestres del Renaixement, conegut per obres com 'La Gioconda'."
+			date="1452-1519"
+			   style="Renaixement"
+		/>
+		<Painting
+			title="Claude Monet"
+			image="/authors/monet.webp"
+			description="Fundador de l'impressionisme, conegut per les seves representacions de la natura."
+			date="1840-1926"
+			   style="Impressionisme"
+		/>
+		  <Painting
+			title="Salvador Dalí"
+			image="/authors/dali.webp"
+			description="Artista surrealista espanyol, famós per les seves imatges oníriques i extravagants."
+			date="1904-1989"
+			   style="Surrealisme"
+		/>
+		<Painting
+			title="Andy Warhol"
+			image="/authors/warhole.webp"
+			description="Figura clau del moviment pop art, conegut per les seves obres sobre la cultura de masses."
+			date="1928-1987"
+			style="Pop Art"
+		/>
+	</section>
 </Layout>
+
+<style>
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+		padding: 2rem;
+	}
+
+	section > * {
+		flex: 1 1 calc(25% - 2rem);
+		box-sizing: border-box;
+	}
+
+	p {
+		font-size: 1.5rem;
+		color: #555;
+		margin-top: 1rem;
+	}
+</style>

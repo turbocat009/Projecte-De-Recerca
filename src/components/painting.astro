@@ -1,0 +1,75 @@
+<div>
+    <img src={Astro.props.image} alt={`Foto de la pintura ${Astro.props.title}`} />
+    <h1>{Astro.props.title}</h1>
+    <section>
+        {
+            Astro.props.author && <p><span>Autor: </span>{Astro.props.author}</p>
+        }
+        {
+            Astro.props.date && <p><span>Data: </span>{Astro.props.date}</p>
+        }
+        {
+            Astro.props.style && <p><span>Estil: </span>{Astro.props.style}</p>
+        }
+        {
+            Astro.props.description && <p><span>Descripció: </span>{Astro.props.description}</p>
+        }
+    </section>
+</div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: rgb(239, 238, 238);
+        backdrop-filter: blur(100px);
+        box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    div:hover {
+        display: flex;
+        padding: 2rem;
+        height: 35rem;
+        border-radius: 8px;
+        margin-bottom: 0rem;
+    }
+
+    img {
+        max-height: 15rem;
+        width: 20rem;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(64, 64, 64);
+        margin-bottom: 1rem;
+    }
+
+    p {
+        display: none;
+        transition: all 0.3s ease;
+    }
+
+    div:hover p {
+        display: block;
+        font-size: 1rem;
+        color: rgb(64, 64, 64);
+        margin-top: 0.5rem;
+    }
+
+    span {
+        font-weight: bold;
+        color: rgb(64, 64, 64);
+    }
+</style>
