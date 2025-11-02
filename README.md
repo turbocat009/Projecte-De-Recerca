@@ -23,7 +23,7 @@ Here’s how the site is organised:
 ---
 
 ## 🛠️ About This Project  
-- Created by a team of 4th ESO students at Institut Pau Vila, Sabadell. :contentReference[oaicite:1]{index=1}  
+- Created by a team of 4th ESO students at Institut Pau Vila, Sabadell. 
 - Built with modern web technologies (HTML, CSS, JavaScript) to deliver an engaging user experience.  
 - Designed to be used by anyone: students, art-lovers, educators or curious visitors.
 
@@ -46,4 +46,4 @@ And here, there are command:
 
 ---
 Thank you for visiting and exploring the fascinating world of art evolution with us. We hope you enjoy the journey!  
-© 2025 CRVStudios. :contentReference[oaicite:4]{index=4}
+© 2025 CRVStudios. 
