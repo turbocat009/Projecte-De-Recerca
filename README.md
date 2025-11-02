@@ -1,38 +1,39 @@
-# Astro Starter Kit: Basics
+# Art Evolution Project – “Evolució de l’Art”
 
+Welcome to the **Art Evolution Project**, a digital space dedicated to exploring the evolution of art, discovering artists, and diving into artworks through time.  
+This website (hosted at [projectederecerca.pages.dev](https://projectederecerca.pages.dev/about/)) is a resource built by a group of students at Institut Pau Vila in Sabadell, for a final-year project.
+
+---
+
+## 🎯 Objectives  
+- To make it easier and more accessible for everyone to understand how art has evolved over time.  
+- To provide a dynamic and interactive platform where visitors can explore artists and artworks.  
+- To bridge technology and art education: combining historical context, visual content and modern web design.
+
+---
+
+## 🧭 Explore the Website  
+Here’s how the site is organised:
+
+- **Art** – The main section where you can browse key art movements and see how styles, techniques, themes and media have changed.  
+- **Explora** – An interactive module: search, filter and dive into artworks by era, medium, region, or theme — perfect if you like to wander freely through art history.  
+- **Artistes** – A dedicated area to explore profiles of artists: their lives, influences, major works and how they contributed to the evolution of art.  
+- **Sobre** – About this project: who created it, the mission, contact details and acknowledgements.
+
+---
+
+## 🛠️ About This Project  
+- Created by a team of 4th ESO students at Institut Pau Vila, Sabadell. :contentReference[oaicite:1]{index=1}  
+- Built with modern web technologies (HTML, CSS, JavaScript) to deliver an engaging user experience.  
+- Designed to be used by anyone: students, art-lovers, educators or curious visitors.
+
+---
+
+## ⚙️ How to install it?  
 ```sh
-pnpm create astro@latest -- --template basics
+git clone https://github.com/turbocat009/Projecte-De-Recerca.git
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+And here, there are command:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -43,7 +44,6 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-"# ProjecteDeRecerca" 
+---
+Thank you for visiting and exploring the fascinating world of art evolution with us. We hope you enjoy the journey!  
+© 2025 CRVStudios. :contentReference[oaicite:4]{index=4}
